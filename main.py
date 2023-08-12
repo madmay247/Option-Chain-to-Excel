@@ -86,7 +86,7 @@ def fetch_option_chain(symbol, xl=False):
     }
     
     if symbol not in symbols_mapping.values():
-        print("Invalid symbol. Exiting...")
+        print("Invalid symbol. Exiting...Sir")
         return None
     
     url = f'https://www.nseindia.com/api/option-chain-indices?symbol={symbol}'
@@ -111,7 +111,7 @@ def fetch_option_chain(symbol, xl=False):
             time.sleep(4)  # Delay for 1 second before the next retry
 
     if not success:
-        print("Request failed after maximum retries. Exiting...")
+        print("Request failed after maximum retries. Exiting...Sir")
         return None
 
   
@@ -147,13 +147,13 @@ def fetch_option_chain(symbol, xl=False):
     return option_chain
 
 def main():
-    print("Select a symbol:")
+    print("Select a symbol, Sir:")
     print("1. NIFTY")
     print("2. BANKNIFTY")
     print("3. FINNIFTY")
     print("4. MIDCPNIFTY")
     
-    user_input = int(input("Enter the corresponding number: "))
+    user_input = int(input("Enter the corresponding number, Sir: "))
     
     symbol = None
     if user_input in [1, 2, 3, 4]:
@@ -172,7 +172,7 @@ def main():
         option_chain = fetch_option_chain(symbol, xl=True)
         if option_chain is not None:
             current_time = time.strftime("%Y-%m-%d %H:%M:%S")
-            print(f"Option chain for {symbol} fetched and exported to Excel at {current_time}. Refresh in 30 seconds")
+            print(f"Option chain for {symbol} fetched and exported to Excel at {current_time}. Refresh in 30 seconds, Sir")
         time.sleep(30)  # Wait for 30 seconds before the next iteration
 
 if __name__ == "__main__":
