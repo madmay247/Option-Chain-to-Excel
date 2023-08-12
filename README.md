@@ -1,4 +1,4 @@
-# Option Chain Data Exporter
+# Bring Entire Option Chain into an Excel file
 
 This script fetches option chain data for specific symbols from the NSE (National Stock Exchange) website and exports it to an Excel file. It provides a user-friendly way to choose the symbol and periodically fetches and updates the data.
 
