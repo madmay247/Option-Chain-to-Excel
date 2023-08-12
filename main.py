@@ -147,13 +147,13 @@ def fetch_option_chain(symbol, xl=False):
     return option_chain
 
 def main():
-    print("Select a symbol, Sir:")
+    print("Hello. Please select a symbol, Sir:")
     print("1. NIFTY")
     print("2. BANKNIFTY")
     print("3. FINNIFTY")
     print("4. MIDCPNIFTY")
     
-    user_input = int(input("Enter the corresponding number, Sir: "))
+    user_input = int(input("Please enter the corresponding number, Sir: "))
     
     symbol = None
     if user_input in [1, 2, 3, 4]:
