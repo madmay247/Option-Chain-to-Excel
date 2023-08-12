@@ -9,12 +9,13 @@ This script fetches option chain data for specific symbols from the NSE (Nationa
 
 You can install the required libraries using the following command:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Usage
 
 1. Run the script using the command:
-   
+
+   `main.py`
 
 3. Select a symbol from the list (1. NIFTY, 2. BANKNIFTY, 3. FINNIFTY, 4. MIDCPNIFTY).
 
@@ -28,7 +29,7 @@ pip install -r requirements.txt
 - Organizes the fetched data into a structured `pandas` DataFrame.
 - Exports the data to an Excel file using `xlwings`.
 - Provides a simple user interface to select the desired symbol.
-- Periodically updates the data in the Excel file to keep it current.
+- Periodically updates the data in the Excel file to keep it current (every 30 seconds).
 
 ## Notes
 
