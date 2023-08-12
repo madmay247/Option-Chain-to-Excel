@@ -9,28 +9,18 @@ This script fetches option chain data for specific symbols from the NSE (Nationa
 
 You can install the required libraries using the following command:
 
-# Option Chain Data Exporter
-
-This script fetches option chain data for specific symbols from the NSE (National Stock Exchange) website and exports it to an Excel file. It provides a user-friendly way to choose the symbol and periodically fetches and updates the data.
-
-## Requirements
-
-- Python 3.x
-- Required libraries: `requests`, `time`, `pandas`, `xlwings`
-
-You can install the required libraries using the following command:
-
+pip install -r requirements.txt
 
 ## Usage
 
 1. Run the script using the command:
+   
 
+3. Select a symbol from the list (1. NIFTY, 2. BANKNIFTY, 3. FINNIFTY, 4. MIDCPNIFTY).
 
-2. Select a symbol from the list (1. NIFTY, 2. BANKNIFTY, 3. FINNIFTY, 4. MIDCPNIFTY).
+4. The script will fetch option chain data from the NSE website, create an Excel file named `option_chain_data.xlsx`, and export the data to it.
 
-3. The script will fetch option chain data from the NSE website, create an Excel file named `option_chain_data.xlsx`, and export the data to it.
-
-4. The script will continue to periodically update the data in the Excel file, refreshing every 30 seconds.
+5. The script will continue to periodically update the data in the Excel file, refreshing every 30 seconds.
 
 ## Features
 
