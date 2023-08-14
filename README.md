@@ -2,6 +2,8 @@
 
 This script fetches option chain data for specific symbols from the NSE (National Stock Exchange) website and exports it to an Excel file. It provides a user-friendly way to choose the symbol and periodically fetches and updates the data.
 
+<video src="OC%20to%20Excel.mp4" controls title="Title"></video>
+
 ## Requirements
 
 - Python 3.x
