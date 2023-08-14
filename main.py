@@ -147,7 +147,7 @@ def fetch_option_chain(symbol, xl=False):
     return option_chain
 
 def main():
-    print("Hello. Please select a symbol, Sir:")
+    print("Hello Sir. Please select a symbol:")
     print("1. NIFTY")
     print("2. BANKNIFTY")
     print("3. FINNIFTY")
